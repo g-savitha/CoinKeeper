@@ -11,12 +11,12 @@
     "mongodb": "^5.6.0"
   },
   "scripts": {
-    "run": "ts-node src/index.ts"
+    "run": "ts-node api/sms.ts"
   },
-  "name": "whatsapp-expenses-tracker",
+  "name": "CoinKeeper",
   "version": "1.0.0",
-  "main": "src/index.ts",
-  "repository": "https://github.com/g-savitha/whatsapp-expense-tracker.git",
+  "main": "api/sms.ts",
+  "repository": "https://github.com/g-savitha/CoinKeeper",
   "author": "Savitha Gollamudi",
   "license": "MIT"
 }
