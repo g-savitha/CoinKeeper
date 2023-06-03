@@ -36,7 +36,6 @@ async function sendMessage(phoneNumber: string, text: string) {
 }
 
 // DB SCHEMA:
-
 /* {
   _id: ObjectId,
   command: String, // 'credit' or 'debit' or 'get' or 'limit'
@@ -105,21 +104,4 @@ module.exports = async (req: VercelRequest, res: VercelResponse) => {
       "Unknown command. Please start with 'credit' or 'debit'."
     );
   }
-
-  // if (msg.startsWith("!add")) {
-  //   const expense = msg.slice(4).trim();
-  //   await db.collection("expenses").insertOne({ expense });
-
-  //   await sendMessage(from, "Expense added!");
-  // //   res.status(200).send("ok");
-  // } else if (msg.startsWith("!get")) {
-  //   const items = await db.collection("expenses").find().toArray();
-  //   const expenses = items.map((item) => item.expense).join("\n");
-
-  //   await sendMessage(from, expenses);
-  //   res.status(200).send("ok");
-  // } else {
-  //   await sendMessage(from, "Unknown Command");
-  //   res.status(200).send("ok");
-  // }
 };
